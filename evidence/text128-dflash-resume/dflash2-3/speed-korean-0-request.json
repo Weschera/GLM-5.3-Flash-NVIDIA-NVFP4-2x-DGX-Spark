@@ -1,0 +1,21 @@
+{
+  "model": "nvidia/GLM-5.3-Flash-NVFP4",
+  "messages": [
+    {
+      "role": "user",
+      "content": "인공지능의 역사를 1950년대부터 현재까지 시대별로 나누어 한국어로 자세히 설명해 주세요. 각 시대의 주요 접근 방법, 성과와 한계를 설명하고 약 900단어 분량의 완결된 글로 작성하세요."
+    }
+  ],
+  "temperature": 0,
+  "top_p": 1,
+  "seed": 37,
+  "repetition_penalty": 1,
+  "chat_template_kwargs": {
+    "enable_thinking": false
+  },
+  "max_tokens": 130980,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

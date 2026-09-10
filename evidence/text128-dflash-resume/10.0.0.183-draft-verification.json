@@ -1,0 +1,1 @@
+{"repo": "incoai/GLM-5.3-Flash-DFlash2", "revision": "bf582e4eacc1810f76656d1811693ff6c6737d2a", "verified": [{"path": "config.json", "bytes": 1273, "digest": "083085aaf95d59bad59c58f1160865683460254e"}, {"path": "model.safetensors", "bytes": 2342169800, "digest": "b038e1d9d1e7833fa3880c2c0135ba9b673013f03da1b29fb831931584759dac"}]}

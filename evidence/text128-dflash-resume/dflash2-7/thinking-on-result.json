@@ -1,0 +1,21 @@
+{
+  "label": "thinking-on",
+  "prompt": "Find the sum of the integers from 1 through 37. Give just the numeric answer after reasoning.",
+  "thinking": true,
+  "prompt_tokens_tokenize": 33,
+  "usage": {
+    "prompt_tokens": 33,
+    "total_tokens": 134,
+    "completion_tokens": 101
+  },
+  "finish_reason": "stop",
+  "content": "**Reasoning:** The sum of the first n positive integers is given by the formula n(n+1)/2. For n = 37:\n\nSum = 37 × 38 / 2 = 37 × 19 = 703\n\n**Answer:** 703",
+  "reasoning": "The sum of integers from 1 to n is n(n+1)/2. For n = 37: 37 × 38 / 2 = 37 × 19 = 703.",
+  "tool_calls": [],
+  "sse_done": true,
+  "wall_s": 2.197242542169988,
+  "ttft_s": 0.326946375425905,
+  "decode_est_tps": 53.467467761582185,
+  "end_to_end_tps": 45.9667051140621,
+  "replacement_characters": 0
+}

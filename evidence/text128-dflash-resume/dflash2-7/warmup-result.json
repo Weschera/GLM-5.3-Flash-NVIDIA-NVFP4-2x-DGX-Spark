@@ -1,0 +1,21 @@
+{
+  "label": "warmup",
+  "prompt": "Reply with exactly READY.",
+  "thinking": false,
+  "prompt_tokens_tokenize": 18,
+  "usage": {
+    "prompt_tokens": 18,
+    "total_tokens": 20,
+    "completion_tokens": 2
+  },
+  "finish_reason": "stop",
+  "content": "READY",
+  "reasoning": "",
+  "tool_calls": [],
+  "sse_done": true,
+  "wall_s": 0.37199466628953815,
+  "ttft_s": 0.25920479092746973,
+  "decode_est_tps": 8.86604402026233,
+  "end_to_end_tps": 5.376421172779184,
+  "replacement_characters": 0
+}

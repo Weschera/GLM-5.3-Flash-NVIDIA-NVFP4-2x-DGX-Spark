@@ -1,0 +1,21 @@
+{
+  "model": "nvidia/GLM-5.3-Flash-NVFP4",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Find the sum of the integers from 1 through 37. Give just the numeric answer after reasoning."
+    }
+  ],
+  "temperature": 0,
+  "top_p": 1,
+  "seed": 37,
+  "repetition_penalty": 1,
+  "chat_template_kwargs": {
+    "enable_thinking": true
+  },
+  "max_tokens": 131039,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

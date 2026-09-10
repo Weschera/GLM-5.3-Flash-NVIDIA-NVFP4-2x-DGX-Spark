@@ -1,0 +1,11 @@
+{
+  "valid_record_passed": true,
+  "negative_fixture_results": {
+    "usage": "correctly rejected speed-prose-0: usage mismatch",
+    "content": "correctly rejected speed-prose-0: content mismatch",
+    "decode_est_tps": "correctly rejected ",
+    "request": "correctly rejected speed-prose-0: request differs from baseline"
+  },
+  "incomplete_matrix_exit": 2,
+  "note": "Offline verifier tests use deliberately altered temporary copies, not model inference scores."
+}

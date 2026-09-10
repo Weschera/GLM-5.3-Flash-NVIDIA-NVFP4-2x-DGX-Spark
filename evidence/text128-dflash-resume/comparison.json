@@ -1,0 +1,226 @@
+[
+  {
+    "variant": "baseline",
+    "speculative_tokens": 0,
+    "quality_passed": false,
+    "runtime_checks_passed": true,
+    "semantic_checks_passed": false,
+    "long_context_passed": true,
+    "strict_failures": [
+      {
+        "probe": "short-quality",
+        "category": "semantic",
+        "passed": false,
+        "error": "Expected one code block"
+      }
+    ],
+    "speculative_counters": {},
+    "median_decode_est_tps": 15.181243819412654,
+    "median_end_to_end_tps": 15.159640040353064,
+    "rows": [
+      {
+        "label": "speed-prose-0",
+        "usage": {
+          "prompt_tokens": 78,
+          "total_tokens": 4434,
+          "completion_tokens": 4356
+        },
+        "decode_est_tps": 15.15957496404354,
+        "end_to_end_tps": 15.144204667830543,
+        "ttft_s": 0.35759787494316697,
+        "wall_s": 287.63478145888075
+      },
+      {
+        "label": "speed-korean-0",
+        "usage": {
+          "prompt_tokens": 92,
+          "total_tokens": 2447,
+          "completion_tokens": 2355
+        },
+        "decode_est_tps": 15.202912674781768,
+        "end_to_end_tps": 15.175075412875588,
+        "ttft_s": 0.3499347912147641,
+        "wall_s": 155.18868512520567
+      },
+      {
+        "label": "speed-prose-1",
+        "usage": {
+          "prompt_tokens": 78,
+          "total_tokens": 10931,
+          "completion_tokens": 10853
+        },
+        "decode_est_tps": 15.08785824032849,
+        "end_to_end_tps": 15.081822917558565,
+        "ttft_s": 0.35413020802661777,
+        "wall_s": 719.6079717501998
+      },
+      {
+        "label": "speed-korean-1",
+        "usage": {
+          "prompt_tokens": 92,
+          "total_tokens": 2330,
+          "completion_tokens": 2238
+        },
+        "decode_est_tps": 15.211763433855237,
+        "end_to_end_tps": 15.182409111036508,
+        "ttft_s": 0.3501924998126924,
+        "wall_s": 147.40743604209274
+      }
+    ]
+  },
+  {
+    "variant": "dflash2-7",
+    "speculative_tokens": 7,
+    "quality_passed": false,
+    "runtime_checks_passed": true,
+    "semantic_checks_passed": true,
+    "long_context_passed": true,
+    "strict_failures": [
+      {
+        "probe": "code",
+        "requirement": "Only Python code, no Markdown fence",
+        "passed": false
+      },
+      {
+        "probe": "thinking-on",
+        "requirement": "Final content exactly 703",
+        "passed": false,
+        "observed": "**Reasoning:** The sum of the first n positive integers is given by the formula n(n+1)/2. For n = 37:\n\nSum = 37 \u00d7 38 / 2 = 37 \u00d7 19 = 703\n\n**Answer:** 703"
+      }
+    ],
+    "speculative_counters": {
+      "num_drafts": 5439.0,
+      "num_draft_tokens": 38073.0,
+      "num_accepted_tokens": 9444.0,
+      "acceptance_rate": 0.24804979907020724,
+      "mean_acceptance_length": 2.7363485934914507
+    },
+    "median_decode_est_tps": 20.50006471628756,
+    "median_end_to_end_tps": 20.431967234452515,
+    "rows": [
+      {
+        "label": "speed-prose-0",
+        "usage": {
+          "prompt_tokens": 78,
+          "total_tokens": 7474,
+          "completion_tokens": 7396
+        },
+        "decode_est_tps": 26.89385954690431,
+        "end_to_end_tps": 26.850092226171306,
+        "ttft_s": 0.4854617500677705,
+        "wall_s": 275.45529220905155
+      },
+      {
+        "label": "speed-korean-0",
+        "usage": {
+          "prompt_tokens": 92,
+          "total_tokens": 2364,
+          "completion_tokens": 2272
+        },
+        "decode_est_tps": 19.150316183648876,
+        "end_to_end_tps": 19.09327584222774,
+        "ttft_s": 0.40665137488394976,
+        "wall_s": 118.99477170780301
+      },
+      {
+        "label": "speed-prose-1",
+        "usage": {
+          "prompt_tokens": 78,
+          "total_tokens": 2370,
+          "completion_tokens": 2292
+        },
+        "decode_est_tps": 21.143558140222222,
+        "end_to_end_tps": 21.072931155269007,
+        "ttft_s": 0.41060983296483755,
+        "wall_s": 108.7651254166849
+      },
+      {
+        "label": "speed-korean-1",
+        "usage": {
+          "prompt_tokens": 92,
+          "total_tokens": 2250,
+          "completion_tokens": 2158
+        },
+        "decode_est_tps": 19.856571292352896,
+        "end_to_end_tps": 19.791003313636025,
+        "ttft_s": 0.41041808435693383,
+        "wall_s": 109.03944412525743
+      }
+    ]
+  },
+  {
+    "variant": "dflash2-3",
+    "speculative_tokens": 3,
+    "quality_passed": false,
+    "runtime_checks_passed": true,
+    "semantic_checks_passed": false,
+    "long_context_passed": true,
+    "strict_failures": [
+      {
+        "probe": "short-quality",
+        "category": "semantic",
+        "passed": false,
+        "error": "Expected one code block"
+      }
+    ],
+    "speculative_counters": {
+      "num_drafts": 6034.0,
+      "num_draft_tokens": 18102.0,
+      "num_accepted_tokens": 9197.0,
+      "acceptance_rate": 0.5080654071373328,
+      "mean_acceptance_length": 2.524196221411999
+    },
+    "median_decode_est_tps": 24.77753188791761,
+    "median_end_to_end_tps": 24.68771099308963,
+    "rows": [
+      {
+        "label": "speed-prose-0",
+        "usage": {
+          "prompt_tokens": 78,
+          "total_tokens": 2900,
+          "completion_tokens": 2822
+        },
+        "decode_est_tps": 26.064620339535455,
+        "end_to_end_tps": 25.976292945310192,
+        "ttft_s": 0.40651537477970123,
+        "wall_s": 108.63751829182729
+      },
+      {
+        "label": "speed-korean-0",
+        "usage": {
+          "prompt_tokens": 92,
+          "total_tokens": 2286,
+          "completion_tokens": 2194
+        },
+        "decode_est_tps": 22.69083575837985,
+        "end_to_end_tps": 22.610040854309524,
+        "ttft_s": 0.38958712480962276,
+        "wall_s": 97.03653408400714
+      },
+      {
+        "label": "speed-prose-1",
+        "usage": {
+          "prompt_tokens": 78,
+          "total_tokens": 6409,
+          "completion_tokens": 6331
+        },
+        "decode_est_tps": 29.36245729028986,
+        "end_to_end_tps": 29.314070707569932,
+        "ttft_s": 0.3899577078409493,
+        "wall_s": 215.9713696250692
+      },
+      {
+        "label": "speed-korean-1",
+        "usage": {
+          "prompt_tokens": 92,
+          "total_tokens": 2197,
+          "completion_tokens": 2105
+        },
+        "decode_est_tps": 23.490443436299763,
+        "end_to_end_tps": 23.399129040869067,
+        "ttft_s": 0.39227437507361174,
+        "wall_s": 89.96061333408579
+      }
+    ]
+  }
+]

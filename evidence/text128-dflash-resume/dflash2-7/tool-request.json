@@ -1,0 +1,43 @@
+{
+  "model": "nvidia/GLM-5.3-Flash-NVFP4",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Use lookup_inventory to look up SKU NV-42. Do not guess the inventory."
+    }
+  ],
+  "temperature": 0,
+  "top_p": 1,
+  "seed": 37,
+  "repetition_penalty": 1,
+  "chat_template_kwargs": {
+    "enable_thinking": false
+  },
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "lookup_inventory",
+        "description": "Look up inventory by SKU.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "sku": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "sku"
+          ],
+          "additionalProperties": false
+        }
+      }
+    }
+  ],
+  "tool_choice": "auto",
+  "max_tokens": 130895,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

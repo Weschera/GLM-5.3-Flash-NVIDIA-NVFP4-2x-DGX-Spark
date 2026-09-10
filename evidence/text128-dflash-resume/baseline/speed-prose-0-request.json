@@ -1,0 +1,21 @@
+{
+  "model": "nvidia/GLM-5.3-Flash-NVFP4",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Write a complete technical tutorial of about 1000 words explaining tensor parallel inference across two machines. Cover sharding, all-reduce, prefill versus decode, KV memory, bandwidth versus latency, why quantized MoE inference can remain memory-bound, and a practical debugging checklist. Use concrete examples and distinguish estimates from measurements."
+    }
+  ],
+  "temperature": 0,
+  "top_p": 1,
+  "seed": 37,
+  "repetition_penalty": 1,
+  "chat_template_kwargs": {
+    "enable_thinking": false
+  },
+  "max_tokens": 130994,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

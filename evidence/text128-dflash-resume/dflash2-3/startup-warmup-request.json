@@ -1,0 +1,21 @@
+{
+  "model": "nvidia/GLM-5.3-Flash-NVFP4",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Reply with exactly READY."
+    }
+  ],
+  "temperature": 0,
+  "top_p": 1,
+  "seed": 37,
+  "repetition_penalty": 1,
+  "chat_template_kwargs": {
+    "enable_thinking": false
+  },
+  "max_tokens": 131054,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

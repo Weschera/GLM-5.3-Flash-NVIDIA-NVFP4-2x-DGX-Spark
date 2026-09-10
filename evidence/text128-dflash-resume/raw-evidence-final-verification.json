@@ -1,0 +1,105 @@
+{
+  "status": "speed_matrix_verified",
+  "expected_speed_samples": 12,
+  "verified_speed_samples": 12,
+  "missing_speed_samples": [],
+  "arms": [
+    {
+      "arm": "baseline",
+      "verified_speed_count": 4,
+      "median_decode_est_tps": 15.181243819412654,
+      "long_context_verified": true,
+      "rows": [
+        {
+          "label": "speed-korean-0",
+          "decode_est_tps": 15.202912674781768,
+          "completion_tokens": 2355,
+          "stream_sha256": "d454b2b4d95fc0aac82f90e137a6316ae1cfba778d2ca7ce83e7abd45a155e3e"
+        },
+        {
+          "label": "speed-korean-1",
+          "decode_est_tps": 15.211763433855237,
+          "completion_tokens": 2238,
+          "stream_sha256": "bfefbd1cba7a15069d0d911aec37afa4eb65065935a2eb1900370d539143cb79"
+        },
+        {
+          "label": "speed-prose-0",
+          "decode_est_tps": 15.15957496404354,
+          "completion_tokens": 4356,
+          "stream_sha256": "42d99bd5e5cc3ebcd60678e4e4d098542d5af42f7c35b9582cd37c906c1dc944"
+        },
+        {
+          "label": "speed-prose-1",
+          "decode_est_tps": 15.08785824032849,
+          "completion_tokens": 10853,
+          "stream_sha256": "74ff45037bcf6e5f5a5a7098333cbaed69723a77c5f53d1b5b396f59d858e787"
+        }
+      ]
+    },
+    {
+      "arm": "dflash2-7",
+      "verified_speed_count": 4,
+      "median_decode_est_tps": 20.50006471628756,
+      "long_context_verified": true,
+      "rows": [
+        {
+          "label": "speed-korean-0",
+          "decode_est_tps": 19.150316183648876,
+          "completion_tokens": 2272,
+          "stream_sha256": "31fa7f9dbe31162309566ed7bff30a943f26616373021232103b48822271c158"
+        },
+        {
+          "label": "speed-korean-1",
+          "decode_est_tps": 19.856571292352896,
+          "completion_tokens": 2158,
+          "stream_sha256": "28d182e2554d11d840670d0bbb5480127200048b178fb474942f70c80bc163b0"
+        },
+        {
+          "label": "speed-prose-0",
+          "decode_est_tps": 26.89385954690431,
+          "completion_tokens": 7396,
+          "stream_sha256": "a46bc4ce6e88635b5a0f4c1710f90c640d7308fc9c8bd183c7c792fc02f629bf"
+        },
+        {
+          "label": "speed-prose-1",
+          "decode_est_tps": 21.143558140222222,
+          "completion_tokens": 2292,
+          "stream_sha256": "4768da6070c18d84ed0767fa97a2dae546b2596e5c538c942250292bd7bd97bd"
+        }
+      ]
+    },
+    {
+      "arm": "dflash2-3",
+      "verified_speed_count": 4,
+      "median_decode_est_tps": 24.77753188791761,
+      "long_context_verified": true,
+      "rows": [
+        {
+          "label": "speed-korean-0",
+          "decode_est_tps": 22.69083575837985,
+          "completion_tokens": 2194,
+          "stream_sha256": "858a8c9454aa0c636db51e3102c77931cf2d6beed2779407c4ca2bfe2cb92191"
+        },
+        {
+          "label": "speed-korean-1",
+          "decode_est_tps": 23.490443436299763,
+          "completion_tokens": 2105,
+          "stream_sha256": "a018705a23a238a19747033ce3603fcb55ddcdd90348b8dae1a2a26cc145c915"
+        },
+        {
+          "label": "speed-prose-0",
+          "decode_est_tps": 26.064620339535455,
+          "completion_tokens": 2822,
+          "stream_sha256": "21ff86286a320b0ea7dfd142638491dc7dc998e33fbe552a767fdc7642980735"
+        },
+        {
+          "label": "speed-prose-1",
+          "decode_est_tps": 29.36245729028986,
+          "completion_tokens": 6331,
+          "stream_sha256": "92adbbf162b9e9092ef594d2ac792a84364613984235b0f0cdb816eb9a0a302d"
+        }
+      ]
+    }
+  ],
+  "scope": "Raw SSE content, usage, timing, natural stop, exact request parity, and saved retrieval receipts. Not independent proof of quality or losslessness. DONE is trusted from the parser receipt because raw JSONL does not retain its literal marker."
+}

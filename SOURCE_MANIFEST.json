@@ -1,0 +1,82 @@
+[
+  {
+    "path": "launch_node.py",
+    "sha256": "05b72b82d797a28ec07e0370e8cbe8c4a2983907d7312c3881bf90ee44089e38",
+    "origin": "tested experiment source"
+  },
+  {
+    "path": "prepare.py",
+    "sha256": "02d34d9ff5e825d4a6ca7967985beb514d3a095e41a85de1500756da558ad641",
+    "origin": "tested experiment source"
+  },
+  {
+    "path": "probes.py",
+    "sha256": "9344e39c0646172bc6211760b0f4fafd186ce0c9e17f6dc0f6aac598449cdf28",
+    "origin": "tested experiment source"
+  },
+  {
+    "path": "workflow.py",
+    "sha256": "c87fe7f4554267e190605c5db50795a965131f8aea0664ebdbb558f4e42b0469",
+    "origin": "tested experiment source"
+  },
+  {
+    "path": "retry_text128.py",
+    "sha256": "bed096d808c9d480331f2ee2f5497de8845355689588a5178c7c60e9f7ddf575",
+    "origin": "tested experiment source"
+  },
+  {
+    "path": "memory_guard.py",
+    "sha256": "4a4a1bd816479b52f792b958897916c55e76fcb738bd7d4e1f2a45a75f3a2d44",
+    "origin": "tested experiment source"
+  },
+  {
+    "path": "kernel_probe.py",
+    "sha256": "ac41b5285ca0e1ebac7272d5f795274bad71b51f6d779cf3eaba2352f9b1a652",
+    "origin": "tested experiment source"
+  },
+  {
+    "path": "cache_ready_retry.py",
+    "sha256": "293cbb63daf2a2231e1013ece682d8d2b9d72ea965639da301183d7f45a649d4",
+    "origin": "tested experiment source"
+  },
+  {
+    "path": "verify_saved_results.py",
+    "sha256": "231f4bb70a39148b02f2790c0419aceb1547f314ef2843b8c16a70fecd869763",
+    "origin": "tested experiment source"
+  },
+  {
+    "path": "test_port_guard.py",
+    "sha256": "22b5d229bb0068f49ed08aeded65db27a0d08ab4c1be53c9e084554353e67a40",
+    "origin": "tested experiment source"
+  },
+  {
+    "path": "chat_template.jinja",
+    "sha256": "3406cc91800b56c06439e65aaea1929e6bc803cdb62f7f995f25ab082efd3408",
+    "origin": "tested experiment source"
+  },
+  {
+    "path": "source-revision.json",
+    "sha256": "f1b6c4b23fac114d4f5cc5599829feea5d39b695db665c65f30a435416ef3621",
+    "origin": "tested experiment source"
+  },
+  {
+    "path": "docker/model_runner_profile_trace.py",
+    "sha256": "5ce6a4fa37a3c732e24fba05f9f143e33ff12445eb98284ff2ae6c83c9b1cfa6",
+    "origin": "tested experiment source"
+  },
+  {
+    "path": "docker/sparse_attn_indexer_kpool_sm121.py",
+    "sha256": "8a3ecfb0bab2441dd7417ed00a10d142191496149f88e5fe79fcfaea4b160980",
+    "origin": "tested experiment source"
+  },
+  {
+    "path": "download/download_node.py",
+    "sha256": "2426ab47183bfffba4368b6ad8d6019d382517ffc0407b539392f4160a55dbb4",
+    "origin": "tested pinned download tooling"
+  },
+  {
+    "path": "download/controller.py",
+    "sha256": "5c04ed1507357124575412b50477bf27ff93b9428b82a593fbd473fe6c8f97be",
+    "origin": "tested pinned download tooling"
+  }
+]

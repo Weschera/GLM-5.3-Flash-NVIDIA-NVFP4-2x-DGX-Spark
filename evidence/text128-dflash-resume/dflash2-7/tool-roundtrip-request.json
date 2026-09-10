@@ -1,0 +1,62 @@
+{
+  "model": "nvidia/GLM-5.3-Flash-NVFP4",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Use lookup_inventory to look up SKU NV-42. Then return only the stock count as an integer."
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "chatcmpl-tool-bc1251f94c248a80",
+          "type": "function",
+          "function": {
+            "name": "lookup_inventory",
+            "arguments": "{\"sku\": \"NV-42\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "chatcmpl-tool-bc1251f94c248a80",
+      "content": "{\"sku\":\"NV-42\",\"stock\":17}"
+    }
+  ],
+  "temperature": 0,
+  "top_p": 1,
+  "seed": 37,
+  "repetition_penalty": 1,
+  "chat_template_kwargs": {
+    "enable_thinking": false
+  },
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "lookup_inventory",
+        "description": "Look up inventory by SKU.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "sku": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "sku"
+          ],
+          "additionalProperties": false
+        }
+      }
+    }
+  ],
+  "tool_choice": "none",
+  "max_tokens": 130862,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

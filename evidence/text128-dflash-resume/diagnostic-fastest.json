@@ -1,0 +1,8 @@
+{
+  "variant": "dflash2-3",
+  "median_decode_est_tps": 24.77753188791761,
+  "speedup_vs_baseline": 1.632114745185367,
+  "quality_passed": false,
+  "semantic_checks_passed": false,
+  "note": "Measured speed only; does not override quality failures or selection."
+}

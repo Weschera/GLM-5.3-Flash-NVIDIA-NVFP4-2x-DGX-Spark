@@ -1,0 +1,16 @@
+{
+  "runtime_checks_passed": false,
+  "all_checks_passed": false,
+  "strict_failures": [
+    {
+      "probe": "short-quality",
+      "category": "semantic",
+      "passed": false,
+      "error": "Expected one code block"
+    }
+  ],
+  "remaining_short_checks_not_completed": true,
+  "long_context_passed": true,
+  "semantic_checks_passed": false,
+  "status": "completed_with_quality_failures"
+}

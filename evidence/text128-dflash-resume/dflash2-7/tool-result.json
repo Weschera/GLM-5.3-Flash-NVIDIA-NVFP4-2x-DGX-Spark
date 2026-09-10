@@ -1,0 +1,30 @@
+{
+  "label": "tool",
+  "prompt": "Use lookup_inventory to look up SKU NV-42. Do not guess the inventory.",
+  "thinking": false,
+  "prompt_tokens_tokenize": 177,
+  "usage": {
+    "prompt_tokens": 177,
+    "total_tokens": 190,
+    "completion_tokens": 13
+  },
+  "finish_reason": "tool_calls",
+  "content": "",
+  "reasoning": "",
+  "tool_calls": [
+    {
+      "id": "chatcmpl-tool-bc1251f94c248a80",
+      "type": "function",
+      "function": {
+        "name": "lookup_inventory",
+        "arguments": "{\"sku\": \"NV-42\"}"
+      }
+    }
+  ],
+  "sse_done": true,
+  "wall_s": 0.8878137920983136,
+  "ttft_s": 0.7690596668981016,
+  "decode_est_tps": 101.04912128120816,
+  "end_to_end_tps": 14.64271012198966,
+  "replacement_characters": 0
+}

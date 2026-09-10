@@ -1,0 +1,21 @@
+{
+  "label": "tool-roundtrip",
+  "prompt": "",
+  "thinking": false,
+  "prompt_tokens_tokenize": 210,
+  "usage": {
+    "prompt_tokens": 210,
+    "total_tokens": 212,
+    "completion_tokens": 2
+  },
+  "finish_reason": "stop",
+  "content": "17",
+  "reasoning": "",
+  "tool_calls": [],
+  "sse_done": true,
+  "wall_s": 0.9117387081496418,
+  "ttft_s": 0.7953007500618696,
+  "decode_est_tps": 8.588264655467333,
+  "end_to_end_tps": 2.1936109349343806,
+  "replacement_characters": 0
+}

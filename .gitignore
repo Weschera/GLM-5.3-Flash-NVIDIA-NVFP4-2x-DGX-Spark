@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+*.log
+*.lock
+*-status.json
+prepared.json
+*-prepared.json
+cache/
+transformers-overlay/
+*.tar
+*.tar.gz
+.env
+.env.*
+evidence/local-*/

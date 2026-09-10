@@ -1,0 +1,21 @@
+{
+  "model": "nvidia/GLM-5.3-Flash-NVFP4",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Write only Python code defining merge_intervals(intervals). Input is a list of closed integer intervals [start,end] with start <= end. Return a list of lists sorted by start, merging overlapping or touching intervals. Empty input returns []. Do not mutate input. Include type hints, a clear docstring, and comments explaining the algorithm, but no imports or top-level example execution."
+    }
+  ],
+  "temperature": 0,
+  "top_p": 1,
+  "seed": 37,
+  "repetition_penalty": 1,
+  "chat_template_kwargs": {
+    "enable_thinking": false
+  },
+  "max_tokens": 130984,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

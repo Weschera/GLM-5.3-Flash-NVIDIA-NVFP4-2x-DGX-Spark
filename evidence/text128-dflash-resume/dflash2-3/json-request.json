@@ -1,0 +1,21 @@
+{
+  "model": "nvidia/GLM-5.3-Flash-NVFP4",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Return only a JSON object with keys total and label. total must be the sum of 137, 286, and 409. label must be exactly NVIDIA."
+    }
+  ],
+  "temperature": 0,
+  "top_p": 1,
+  "seed": 37,
+  "repetition_penalty": 1,
+  "chat_template_kwargs": {
+    "enable_thinking": false
+  },
+  "max_tokens": 131024,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

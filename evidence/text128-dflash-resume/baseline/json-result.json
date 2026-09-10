@@ -1,0 +1,21 @@
+{
+  "label": "json",
+  "prompt": "Return only a JSON object with keys total and label. total must be the sum of 137, 286, and 409. label must be exactly NVIDIA.",
+  "thinking": false,
+  "prompt_tokens_tokenize": 48,
+  "usage": {
+    "prompt_tokens": 48,
+    "total_tokens": 63,
+    "completion_tokens": 15
+  },
+  "finish_reason": "stop",
+  "content": "{\"total\": 832, \"label\": \"NVIDIA\"}",
+  "reasoning": "",
+  "tool_calls": [],
+  "sse_done": true,
+  "wall_s": 1.2589756669476628,
+  "ttft_s": 0.2974176248535514,
+  "decode_est_tps": 14.559703509431795,
+  "end_to_end_tps": 11.914447906977355,
+  "replacement_characters": 0
+}
