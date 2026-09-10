@@ -1,0 +1,40 @@
+{
+  "observed_epoch": 1789047331.619193,
+  "scope": "Restored selected boot: live HTTP, containers, speculation activity, and saved READY generation. Speed and full probe results refer to benchmark boots, not rescored on this restart.",
+  "publication_note": "Subset of original readback; host process IDs, container IDs and unrelated model identity omitted. Benchmark data not changed.",
+  "checks": {
+    "/health": {
+      "http_status": 200,
+      "body": ""
+    },
+    "/v1/models": {
+      "http_status": 200,
+      "body": "{\"object\":\"list\",\"data\":[{\"id\":\"nvidia/GLM-5.3-Flash-NVFP4\",\"object\":\"model\",\"created\":1789047331,\"owned_by\":\"vllm\",\"root\":\"/model\",\"parent\":null,\"max_model_len\":131072,\"permission\":[{\"id\":\"modelperm-a28643d4d726f956\",\"object\":\"model_permission\",\"created\":1789047331,\"allow_create_engine\":false,\"allow_sampling\":true,\"allow_logprobs\":true,\"allow_search_indices\":false,\"allow_view\":true,\"allow_fine_tuning\":false,\"organization\":\"*\",\"group\":null,\"is_blocking\":false}]}]}"
+    },
+    "/metrics": {
+      "http_status": 200,
+      "body": "vllm:spec_decode_num_drafts_total{engine=\"0\",model_name=\"nvidia/GLM-5.3-Flash-NVFP4\"} 1.0\nvllm:spec_decode_num_accepted_tokens_total{engine=\"0\",model_name=\"nvidia/GLM-5.3-Flash-NVFP4\"} 1.0\nvllm:num_requests_running{engine=\"0\",model_name=\"nvidia/GLM-5.3-Flash-NVFP4\"} 0.0"
+    },
+    "unrelated_service_health_http": 200,
+    "rank0": {
+      "running": true,
+      "speculative": {
+        "method": "dflash",
+        "model": "/draft-repo/snapshots/bf582e4eacc1810f76656d1811693ff6c6737d2a",
+        "num_speculative_tokens": 7
+      },
+      "context": "131072",
+      "guard_phase": "disarmed"
+    },
+    "rank1": {
+      "running": true,
+      "speculative": {
+        "method": "dflash",
+        "model": "/draft-repo/snapshots/bf582e4eacc1810f76656d1811693ff6c6737d2a",
+        "num_speculative_tokens": 7
+      },
+      "context": "131072",
+      "guard_phase": "disarmed"
+    }
+  }
+}
